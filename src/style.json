@@ -1,0 +1,3869 @@
+{
+  "sources": {},
+  "layers": [
+    {
+      "id": "third-administrative-division",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "site_adm3_a",
+      "minzoom": 10.95,
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": { "line-color": "#D7B09E", "line-width": 1.06667 }
+    },
+    {
+      "id": "second-administrative-division",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "site_adm2_a",
+      "minzoom": 10.95,
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": { "line-color": "#D79E9E", "line-width": 1.33333 }
+    },
+    {
+      "id": "first-administrative-division-outer",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "site_adm1_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": { "fill-color": "rgba(204,204,204,0.22)" }
+    },
+    {
+      "id": "first-administrative-division-inner",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "site_adm1_a",
+      "minzoom": 9.21,
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": { "line-color": "#AD7882", "line-width": 2.66667 }
+    },
+    {
+      "id": "camp-boundary",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "site_adm0_a",
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": { "line-color": "#BD6666", "line-width": 5.33333 }
+    },
+    {
+      "id": "registration-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "registration"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "reception-centre-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "reception_centre"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "gov-office-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "gov_office"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "ngo-office-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "ngo_office"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "site-entry-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "site_entry"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "site-management-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "site_management"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "security-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "security"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "outreach-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "outreach"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "warehouse-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "warehouse"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "fire-station-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "fire_station"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "police-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "police"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "prison-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "prison"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "army-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "army"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "helipad-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "helipad"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "airport-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "airport"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "bus-station-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "bus_station"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "solar-street-light-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "solar_street_light"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "tree-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "tree"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "unknown-adminsec-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "unknown"],
+      "source": "esri",
+      "source-layer": "adminsec_a",
+      "minzoom": 9.21,
+      "layout": {},
+      "paint": {
+        "fill-color": "#8400A8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "registration-point",
+      "type": "symbol",
+      "filter": ["==", "type", "registration"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Administration_and_security_point/Registration center - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Administration_and_security_point/Registration center - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Administration_and_security_point/Registration center - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Administration_and_security_point/Registration center - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Administration_and_security_point/Registration center - Non operational",
+          "Administration_and_security_point/Registration center - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#004455" }
+    },
+    {
+      "id": "reception-centre-point",
+      "type": "symbol",
+      "filter": ["==", "type", "reception_centre"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Administration_and_security_point/Reception center - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Administration_and_security_point/Reception center - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Administration_and_security_point/Reception center - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Administration_and_security_point/Reception center - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Administration_and_security_point/Reception center - Non operational",
+          "Administration_and_security_point/Reception center - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#333333" }
+    },
+    {
+      "id": "gov-office-point",
+      "type": "symbol",
+      "filter": ["==", "type", "gov_office"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Administration_and_security_point/Government admin. office - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Administration_and_security_point/Government admin. office - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Administration_and_security_point/Government admin. office - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Administration_and_security_point/Government admin. office - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Administration_and_security_point/Government admin. office - Non operational",
+          "Administration_and_security_point/Government admin. office - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#333333" }
+    },
+    {
+      "id": "ngo-office-point",
+      "type": "symbol",
+      "filter": ["==", "type", "ngo_office"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Administration_and_security_point/NGO or UN Office - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Administration_and_security_point/NGO or UN Office - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Administration_and_security_point/NGO or UN Office - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Administration_and_security_point/NGO or UN Office - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Administration_and_security_point/NGO or UN Office - Non operational",
+          "Administration_and_security_point/NGO or UN Office - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#333333" }
+    },
+    {
+      "id": "site-entry-point",
+      "type": "symbol",
+      "filter": ["==", "type", "site_entry"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Administration_and_security_point/Entry point - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Administration_and_security_point/Entry point - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Administration_and_security_point/Entry point - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Administration_and_security_point/Entry point - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Administration_and_security_point/Entry point - Non operational",
+          "Administration_and_security_point/Entry point - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#010002" }
+    },
+    {
+      "id": "site-management-point",
+      "type": "symbol",
+      "filter": ["==", "type", "site_management"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Administration_and_security_point/Site management office - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Administration_and_security_point/Site management office - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Administration_and_security_point/Site management office - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Administration_and_security_point/Site management office - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Administration_and_security_point/Site management office - Non operational",
+          "Administration_and_security_point/Site management office - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#004455" }
+    },
+    {
+      "id": "security-point",
+      "type": "symbol",
+      "filter": ["==", "type", "security"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Administration_and_security_point/Security - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Administration_and_security_point/Security - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Administration_and_security_point/Security - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Administration_and_security_point/Security - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Administration_and_security_point/Security - Non operational",
+          "Administration_and_security_point/Security - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#333333" }
+    },
+    {
+      "id": "outreach-point",
+      "type": "symbol",
+      "filter": ["==", "type", "outreach"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Administration_and_security_point/Outreach post - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Administration_and_security_point/Outreach post - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Administration_and_security_point/Outreach post - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Administration_and_security_point/Outreach post - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Administration_and_security_point/Outreach post - Non operational",
+          "Administration_and_security_point/Outreach post - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#333333" }
+    },
+    {
+      "id": "warehouse-point",
+      "type": "symbol",
+      "filter": ["==", "type", "warehouse"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Administration_and_security_point/Warehouse - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Administration_and_security_point/Warehouse - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Administration_and_security_point/Warehouse - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Administration_and_security_point/Warehouse - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Administration_and_security_point/Warehouse - Non operational",
+          "Administration_and_security_point/Warehouse - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#333333" }
+    },
+    {
+      "id": "fire-station-point",
+      "type": "symbol",
+      "filter": ["==", "type", "fire_station"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Administration_and_security_point/Fire station - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Administration_and_security_point/Fire station - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Administration_and_security_point/Fire station - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Administration_and_security_point/Fire station - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Administration_and_security_point/Fire station - Non operational",
+          "Administration_and_security_point/Fire station - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#782121" }
+    },
+    {
+      "id": "police-point",
+      "type": "symbol",
+      "filter": ["==", "type", "police"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Administration_and_security_point/Police - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Administration_and_security_point/Police - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Administration_and_security_point/Police - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Administration_and_security_point/Police - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Administration_and_security_point/Police - Non operational",
+          "Administration_and_security_point/Police - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#333333" }
+    },
+    {
+      "id": "prison-point",
+      "type": "symbol",
+      "filter": ["==", "type", "prison"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Administration_and_security_point/Prison - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Administration_and_security_point/Prison - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Administration_and_security_point/Prison - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Administration_and_security_point/Prison - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Administration_and_security_point/Prison - Non operational",
+          "Administration_and_security_point/Prison - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#333333" }
+    },
+    {
+      "id": "army-point",
+      "type": "symbol",
+      "filter": ["==", "type", "army"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Administration_and_security_point/Army post - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Administration_and_security_point/Army post - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Administration_and_security_point/Army post - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Administration_and_security_point/Army post - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Administration_and_security_point/Army post - Non operational",
+          "Administration_and_security_point/Army post - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#333333" }
+    },
+    {
+      "id": "helipad-point",
+      "type": "symbol",
+      "filter": ["==", "type", "helipad"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Administration_and_security_point/Helipad - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Administration_and_security_point/Helipad - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Administration_and_security_point/Helipad - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Administration_and_security_point/Helipad - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Administration_and_security_point/Helipad - Non operational",
+          "Administration_and_security_point/Helipad - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#333333" }
+    },
+    {
+      "id": "airport-point",
+      "type": "symbol",
+      "filter": ["==", "type", "airport"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Administration_and_security_point/Airport - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Administration_and_security_point/Airport - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Administration_and_security_point/Airport - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Administration_and_security_point/Airport - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Administration_and_security_point/Airport - Non operational",
+          "Administration_and_security_point/Airport - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#333333" }
+    },
+    {
+      "id": "bus-station-point",
+      "type": "symbol",
+      "filter": ["==", "type", "bus_station"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Administration_and_security_point/Bus station - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Administration_and_security_point/Bus station - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Administration_and_security_point/Bus station - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Administration_and_security_point/Bus station - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Administration_and_security_point/Bus station - Non operational",
+          "Administration_and_security_point/Bus station - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#333333" }
+    },
+    {
+      "id": "solar-street-light-point",
+      "type": "symbol",
+      "filter": ["==", "type", "solar_street_light"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Administration_and_security_point/Solar street light - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Administration_and_security_point/Solar street light - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Administration_and_security_point/Solar street light - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Administration_and_security_point/Solar street light - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Administration_and_security_point/Solar street light - Non operational",
+          "Administration_and_security_point/Solar street light - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#333333" }
+    },
+    {
+      "id": "tree-point",
+      "type": "symbol",
+      "filter": ["==", "type", "tree"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Administration_and_security_point/Tree - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Administration_and_security_point/Tree - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Administration_and_security_point/Tree - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Administration_and_security_point/Tree - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Administration_and_security_point/Tree - Non operational",
+          "Administration_and_security_point/Tree - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#333333" }
+    },
+    {
+      "id": "unknown-adminsec-point",
+      "type": "symbol",
+      "filter": ["==", "type", "unknown"],
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": "Administration_and_security_point/Unknown",
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "rgba(162,161,158,0.78)" }
+    },
+    {
+      "id": "nursery-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "nursery"],
+      "source": "esri",
+      "source-layer": "education_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#38A800",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "kindergarden-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "kindergarden"],
+      "source": "esri",
+      "source-layer": "education_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#38A800",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "primary-school-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "primary_school"],
+      "source": "esri",
+      "source-layer": "education_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#38A800",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "secondary-school-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "secondary_school"],
+      "source": "esri",
+      "source-layer": "education_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#38A800",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "high-school-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "high_school"],
+      "source": "esri",
+      "source-layer": "education_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#38A800",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "college-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "college"],
+      "source": "esri",
+      "source-layer": "education_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#38A800",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "private-school-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "private_school"],
+      "source": "esri",
+      "source-layer": "education_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#38A800",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "unknown-education-polygon",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "education_a",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#38A800",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "nursery-point",
+      "type": "symbol",
+      "filter": ["==", "type", "nursery"],
+      "source": "esri",
+      "source-layer": "education_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Education_point/Nursery - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Education_point/Nursery - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Education_point/Nursery - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Education_point/Nursery - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Education_point/Nursery - Non operational",
+          "Education_point/Nursery - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          ["==", ["get", "status"], "defective"],
+          "#010002",
+          "#16502D"
+        ]
+      }
+    },
+    {
+      "id": "kindergarden-point",
+      "type": "symbol",
+      "filter": ["==", "type", "kindergarden"],
+      "source": "esri",
+      "source-layer": "education_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Education_point/Kindergarden - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Education_point/Kindergarden - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Education_point/Kindergarden - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Education_point/Kindergarden - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Education_point/Kindergarden - Non operational",
+          "Education_point/Kindergarden - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#010002" }
+    },
+    {
+      "id": "primary-school-point",
+      "type": "symbol",
+      "filter": ["==", "type", "primary_school"],
+      "source": "esri",
+      "source-layer": "education_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Education_point/Primary school - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Education_point/Primary school - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Education_point/Primary school - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Education_point/Primary school - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Education_point/Primary school - Non operational",
+          "Education_point/Primary school - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#010002" }
+    },
+    {
+      "id": "secondary-school-point",
+      "type": "symbol",
+      "filter": ["==", "type", "secondary_school"],
+      "source": "esri",
+      "source-layer": "education_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Education_point/Secondary school - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Education_point/Secondary school - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Education_point/Secondary school - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Education_point/Secondary school - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Education_point/Secondary school - Non operational",
+          "Education_point/Secondary school - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#010002" }
+    },
+    {
+      "id": "high-school-point",
+      "type": "symbol",
+      "filter": ["==", "type", "high_school"],
+      "source": "esri",
+      "source-layer": "education_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Education_point/High School - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Education_point/High School - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Education_point/High School - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Education_point/High School - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Education_point/High School - Non operational",
+          "Education_point/High School - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#16502D" }
+    },
+    {
+      "id": "college-point",
+      "type": "symbol",
+      "filter": ["==", "type", "college"],
+      "source": "esri",
+      "source-layer": "education_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Education_point/College - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Education_point/College - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Education_point/College - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Education_point/College - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Education_point/College - Non operational",
+          "Education_point/College - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#16502D" }
+    },
+    {
+      "id": "private-school-point",
+      "type": "symbol",
+      "filter": ["==", "type", "private_school"],
+      "source": "esri",
+      "source-layer": "education_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Education_point/Private school - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Education_point/Private school - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Education_point/Private school - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Education_point/Private school - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Education_point/Private school - Non operational",
+          "Education_point/Private school - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#010002" }
+    },
+    {
+      "id": "unknown-education-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "education_p",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": "Education_point/Unknown",
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "rgba(162,161,158,0.78)" }
+    },
+    {
+      "id": "hospital-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "hospital"],
+      "source": "esri",
+      "source-layer": "hltfac_a",
+      "minzoom": 11.53,
+      "paint": {
+        "fill-color": "#E60000",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "health-center-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "health_center"],
+      "source": "esri",
+      "source-layer": "hltfac_a",
+      "minzoom": 11.53,
+      "paint": {
+        "fill-color": "#E60000",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "health-post-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "health_post"],
+      "source": "esri",
+      "source-layer": "hltfac_a",
+      "minzoom": 11.53,
+      "paint": {
+        "fill-color": "#E60000",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "mobile-clinic-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "mobile_clinic"],
+      "source": "esri",
+      "source-layer": "hltfac_a",
+      "minzoom": 11.53,
+      "paint": {
+        "fill-color": "#E60000",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "ctu-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "ctu"],
+      "source": "esri",
+      "source-layer": "hltfac_a",
+      "minzoom": 11.53,
+      "paint": {
+        "fill-color": "#E60000",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "nutrition-center-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "nutrition_center"],
+      "source": "esri",
+      "source-layer": "hltfac_a",
+      "minzoom": 11.53,
+      "paint": {
+        "fill-color": "#E60000",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "rehabilitation-center-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "rehabilitation_center"],
+      "source": "esri",
+      "source-layer": "hltfac_a",
+      "minzoom": 11.53,
+      "paint": {
+        "fill-color": "#E60000",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "pharmacy-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "pharmacy"],
+      "source": "esri",
+      "source-layer": "hltfac_a",
+      "minzoom": 11.53,
+      "paint": {
+        "fill-color": "#E60000",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "healthfac-unknown-polygon",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "hltfac_a",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 11.53,
+      "paint": {
+        "fill-color": "#E60000",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "hospital-point",
+      "type": "symbol",
+      "filter": ["==", "type", "hospital"],
+      "source": "esri",
+      "source-layer": "hltfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Health_facilities_point/Hospital - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Health_facilities_point/Hospital - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Health_facilities_point/Hospital - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Health_facilities_point/Hospital - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Health_facilities_point/Hospital - Non operational",
+          "Health_facilities_point/Hospital - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#AA0000" }
+    },
+    {
+      "id": "health-center-point",
+      "type": "symbol",
+      "filter": ["==", "type", "health_center"],
+      "source": "esri",
+      "source-layer": "hltfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Health_facilities_point/Health center - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Health_facilities_point/Health center - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Health_facilities_point/Health center - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Health_facilities_point/Health center - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Health_facilities_point/Health center - Non operational",
+          "Health_facilities_point/Health center - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#AA0000" }
+    },
+    {
+      "id": "health-post-point",
+      "type": "symbol",
+      "filter": ["==", "type", "health_post"],
+      "source": "esri",
+      "source-layer": "hltfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Health_facilities_point/Health post - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Health_facilities_point/Health post - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Health_facilities_point/Health post - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Health_facilities_point/Health post - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Health_facilities_point/Health post - Non operational",
+          "Health_facilities_point/Health post - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          ["==", ["get", "status"], "unknown"],
+          "rgba(170,0,0,0)",
+          "#AA0000"
+        ]
+      }
+    },
+    {
+      "id": "mobile-clinic-point",
+      "type": "symbol",
+      "filter": ["==", "type", "mobile_clinic"],
+      "source": "esri",
+      "source-layer": "hltfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Health_facilities_point/Mobile clinic - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Health_facilities_point/Mobile clinic - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Health_facilities_point/Mobile clinic - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Health_facilities_point/Mobile clinic - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Health_facilities_point/Mobile clinic - Non operational",
+          "Health_facilities_point/Mobile clinic - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#AA0000" }
+    },
+    {
+      "id": "ctu-point",
+      "type": "symbol",
+      "filter": ["==", "type", "ctu"],
+      "source": "esri",
+      "source-layer": "hltfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Health_facilities_point/Cholera treatment center - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Health_facilities_point/Cholera treatment center - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Health_facilities_point/Cholera treatment center - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Health_facilities_point/Cholera treatment center - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Health_facilities_point/Cholera treatment center - Non operational",
+          "Health_facilities_point/Cholera treatment center - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#AA0000" }
+    },
+    {
+      "id": "nutrition-center-point",
+      "type": "symbol",
+      "filter": ["==", "type", "nutrition_center"],
+      "source": "esri",
+      "source-layer": "hltfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Health_facilities_point/Nutrition center - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Health_facilities_point/Nutrition center - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Health_facilities_point/Nutrition center - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Health_facilities_point/Nutrition center - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Health_facilities_point/Nutrition center - Non operational",
+          "Health_facilities_point/Nutrition center - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          ["==", ["get", "status"], "unknown"],
+          "rgba(170,0,0,0)",
+          "#AA0000"
+        ]
+      }
+    },
+    {
+      "id": "rehabilitation-center-point",
+      "type": "symbol",
+      "filter": ["==", "type", "rehabilitation_center"],
+      "source": "esri",
+      "source-layer": "hltfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Health_facilities_point/Rehabilitation center - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Health_facilities_point/Rehabilitation center - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Health_facilities_point/Rehabilitation center - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Health_facilities_point/Rehabilitation center - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Health_facilities_point/Rehabilitation center - Non operational",
+          "Health_facilities_point/Rehabilitation center - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#AA0000" }
+    },
+    {
+      "id": "pharmacy-point",
+      "type": "symbol",
+      "filter": ["==", "type", "pharmacy"],
+      "source": "esri",
+      "source-layer": "hltfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Health_facilities_point/Pharmacy - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Health_facilities_point/Pharmacy - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Health_facilities_point/Pharmacy - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Health_facilities_point/Pharmacy - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Health_facilities_point/Pharmacy - Non operational",
+          "Health_facilities_point/Pharmacy - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#AA0000" }
+    },
+    {
+      "id": "healthfac-unknown-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "hltfac_p",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": "Health_facilities_point/Unknown",
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "rgba(162,161,158,0.78)" }
+    },
+    {
+      "id": "community-center-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "community_center"],
+      "source": "esri",
+      "source-layer": "socfac_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFE514",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "group-center-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "group_center"],
+      "source": "esri",
+      "source-layer": "socfac_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFE514",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "protection-center-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "protection_center"],
+      "source": "esri",
+      "source-layer": "socfac_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFE514",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "distribution-point-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "distribution_point"],
+      "source": "esri",
+      "source-layer": "socfac_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFE514",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "sport-center-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "sport_center"],
+      "source": "esri",
+      "source-layer": "socfac_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFE514",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "playground-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "playground"],
+      "source": "esri",
+      "source-layer": "socfac_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFE514",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "marketplace-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "marketplace"],
+      "source": "esri",
+      "source-layer": "socfac_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFE514",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "workshop-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "workshop"],
+      "source": "esri",
+      "source-layer": "socfac_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFE514",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "shop-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "shop"],
+      "source": "esri",
+      "source-layer": "socfac_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFE514",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "cooking-area-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "cooking_area"],
+      "source": "esri",
+      "source-layer": "socfac_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFE514",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "eating-area-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "eating_area"],
+      "source": "esri",
+      "source-layer": "socfac_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFE514",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "bar-resto-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "bar_resto"],
+      "source": "esri",
+      "source-layer": "socfac_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFE514",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "farming-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "farming"],
+      "source": "esri",
+      "source-layer": "socfac_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFE514",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "slaughterhouse-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "slaughterhouse"],
+      "source": "esri",
+      "source-layer": "socfac_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFE514",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "cemetery-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "cemetery"],
+      "source": "esri",
+      "source-layer": "socfac_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFE514",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "other-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "other"],
+      "source": "esri",
+      "source-layer": "socfac_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFE514",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "socialfac-unknown-polygon",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "socfac_a",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFE514",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "community-center-point",
+      "type": "symbol",
+      "filter": ["==", "type", "community_center"],
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Social_facilities_point/Community center - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Social_facilities_point/Community center - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Social_facilities_point/Community center - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Social_facilities_point/Community center - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Social_facilities_point/Community center - Non operational",
+          "Social_facilities_point/Community center - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#AB38AB" }
+    },
+    {
+      "id": "group-center-point",
+      "type": "symbol",
+      "filter": ["==", "type", "group_center"],
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Social_facilities_point/Target Group center - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Social_facilities_point/Target Group center - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Social_facilities_point/Target Group center - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Social_facilities_point/Target Group center - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Social_facilities_point/Target Group center - Non operational",
+          "Social_facilities_point/Target Group center - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#AB38AB" }
+    },
+    {
+      "id": "protection-center-point",
+      "type": "symbol",
+      "filter": ["==", "type", "protection_center"],
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Social_facilities_point/Protection center - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Social_facilities_point/Protection center - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Social_facilities_point/Protection center - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Social_facilities_point/Protection center - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Social_facilities_point/Protection center - Non operational",
+          "Social_facilities_point/Protection center - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#AB38AB" }
+    },
+    {
+      "id": "distribution-point-point",
+      "type": "symbol",
+      "filter": ["==", "type", "distribution_point"],
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Social_facilities_point/Distribution point - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Social_facilities_point/Distribution point - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Social_facilities_point/Distribution point - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Social_facilities_point/Distribution point - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Social_facilities_point/Distribution point - Non operational",
+          "Social_facilities_point/Distribution point - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#AB38AB" }
+    },
+    {
+      "id": "sport-center-point",
+      "type": "symbol",
+      "filter": ["==", "type", "sport_center"],
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Social_facilities_point/Sport center - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Social_facilities_point/Sport center - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Social_facilities_point/Sport center - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Social_facilities_point/Sport center - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Social_facilities_point/Sport center - Non operational",
+          "Social_facilities_point/Sport center - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#AB38AB" }
+    },
+    {
+      "id": "playground-point",
+      "type": "symbol",
+      "filter": ["==", "type", "playground"],
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Social_facilities_point/Playground/Child friendly space - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Social_facilities_point/Playground/Child friendly space - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Social_facilities_point/Playground/Child friendly space - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Social_facilities_point/Playground/Child friendly space - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Social_facilities_point/Playground/Child friendly space - Non operational",
+          "Social_facilities_point/Playground/Child friendly space - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#AB38AB" }
+    },
+    {
+      "id": "marketplace-point",
+      "type": "symbol",
+      "filter": ["==", "type", "marketplace"],
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Social_facilities_point/Marketplace - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Social_facilities_point/Marketplace - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Social_facilities_point/Marketplace - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Social_facilities_point/Marketplace - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Social_facilities_point/Marketplace - Non operational",
+          "Social_facilities_point/Marketplace - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#AB38AB" }
+    },
+    {
+      "id": "workshop-point",
+      "type": "symbol",
+      "filter": ["==", "type", "workshop"],
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Social_facilities_point/Craft Workshop - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Social_facilities_point/Craft Workshop - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Social_facilities_point/Craft Workshop - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Social_facilities_point/Craft Workshop - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Social_facilities_point/Craft Workshop - Non operational",
+          "Social_facilities_point/Craft Workshop - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#AB38AB" }
+    },
+    {
+      "id": "shop-point",
+      "type": "symbol",
+      "filter": ["==", "type", "shop"],
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Social_facilities_point/Shops - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Social_facilities_point/Shops - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Social_facilities_point/Shops - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Social_facilities_point/Shops - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Social_facilities_point/Shops - Non operational",
+          "Social_facilities_point/Shops - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#AB38AB" }
+    },
+    {
+      "id": "cooking-area-point",
+      "type": "symbol",
+      "filter": ["==", "type", "cooking_area"],
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Social_facilities_point/Communal cooking area - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Social_facilities_point/Communal cooking area - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Social_facilities_point/Communal cooking area - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Social_facilities_point/Communal cooking area - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Social_facilities_point/Communal cooking area - Non operational",
+          "Social_facilities_point/Communal cooking area - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#AB38AB" }
+    },
+    {
+      "id": "eating-area-point",
+      "type": "symbol",
+      "filter": ["==", "type", "eating_area"],
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Social_facilities_point/Communal eating area - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Social_facilities_point/Communal eating area - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Social_facilities_point/Communal eating area - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Social_facilities_point/Communal eating area - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Social_facilities_point/Communal eating area - Non operational",
+          "Social_facilities_point/Communal eating area - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#AB38AB" }
+    },
+    {
+      "id": "bar-resto-point",
+      "type": "symbol",
+      "filter": ["==", "type", "bar_resto"],
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Social_facilities_point/Bar/Restaurant - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Social_facilities_point/Bar/Restaurant - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Social_facilities_point/Bar/Restaurant - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Social_facilities_point/Bar/Restaurant - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Social_facilities_point/Bar/Restaurant - Non operational",
+          "Social_facilities_point/Bar/Restaurant - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#AB38AB" }
+    },
+    {
+      "id": "farming-point",
+      "type": "symbol",
+      "filter": ["==", "type", "farming"],
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Social_facilities_point/Farming Perimeter - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Social_facilities_point/Farming Perimeter - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Social_facilities_point/Farming Perimeter - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Social_facilities_point/Farming Perimeter - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Social_facilities_point/Farming Perimeter - Non operational",
+          "Social_facilities_point/Farming Perimeter - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#217821" }
+    },
+    {
+      "id": "slaughterhouse-point",
+      "type": "symbol",
+      "filter": ["==", "type", "slaughterhouse"],
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Social_facilities_point/Slaughterhouse - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Social_facilities_point/Slaughterhouse - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Social_facilities_point/Slaughterhouse - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Social_facilities_point/Slaughterhouse - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Social_facilities_point/Slaughterhouse - Non operational",
+          "Social_facilities_point/Slaughterhouse - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#552200" }
+    },
+    {
+      "id": "cemetery-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "filter": ["==", "type", "cemetery"],
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": "Social_facilities_point/Unknown",
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "rgba(162,161,158,0.78)" }
+    },
+    {
+      "id": "other-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "filter": ["==", "type", "other"],
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": "Social_facilities_point/Unknown",
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "rgba(162,161,158,0.78)" }
+    },
+    {
+      "id": "socialfac-unknown-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": "Social_facilities_point/Unknown",
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "rgba(162,161,158,0.78)" }
+    },
+    {
+      "id": "animist-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "animist"],
+      "source": "esri",
+      "source-layer": "worship_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#CD6666",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "buddhist-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "buddhist"],
+      "source": "esri",
+      "source-layer": "worship_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#CD6666",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "christian-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "christian"],
+      "source": "esri",
+      "source-layer": "worship_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#CD6666",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "hindu-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "hindu"],
+      "source": "esri",
+      "source-layer": "worship_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#CD6666",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "muslim-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "muslim"],
+      "source": "esri",
+      "source-layer": "worship_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#CD6666",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "jewish-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "jewish"],
+      "source": "esri",
+      "source-layer": "worship_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#CD6666",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "worship-unknown-polygon",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "worship_a",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#CD6666",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "animist-point",
+      "type": "symbol",
+      "filter": ["==", "type", "animist"],
+      "source": "esri",
+      "source-layer": "worship_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Place_of_worship_point/Animist temple - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Place_of_worship_point/Animist temple - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Place_of_worship_point/Animist temple - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Place_of_worship_point/Animist temple - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Place_of_worship_point/Animist temple - Non operational",
+          "Place_of_worship_point/Animist temple - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#000000" }
+    },
+    {
+      "id": "buddhist-point",
+      "type": "symbol",
+      "filter": ["==", "type", "buddhist"],
+      "source": "esri",
+      "source-layer": "worship_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Place_of_worship_point/Buddhist temple - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Place_of_worship_point/Buddhist temple - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Place_of_worship_point/Buddhist temple - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Place_of_worship_point/Buddhist temple - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Place_of_worship_point/Buddhist temple - Non operational",
+          "Place_of_worship_point/Buddhist temple - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#000000" }
+    },
+    {
+      "id": "christian-point",
+      "type": "symbol",
+      "filter": ["==", "type", "christian"],
+      "source": "esri",
+      "source-layer": "worship_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Place_of_worship_point/Church - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Place_of_worship_point/Church - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Place_of_worship_point/Church - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Place_of_worship_point/Church - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Place_of_worship_point/Church - Non operational",
+          "Place_of_worship_point/Church - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#000000" }
+    },
+    {
+      "id": "hindu-point",
+      "type": "symbol",
+      "filter": ["==", "type", "hindu"],
+      "source": "esri",
+      "source-layer": "worship_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Place_of_worship_point/Hindu temple - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Place_of_worship_point/Hindu temple - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Place_of_worship_point/Hindu temple - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Place_of_worship_point/Hindu temple - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Place_of_worship_point/Hindu temple - Non operational",
+          "Place_of_worship_point/Hindu temple - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#000000" }
+    },
+    {
+      "id": "muslim-point",
+      "type": "symbol",
+      "filter": ["==", "type", "muslim"],
+      "source": "esri",
+      "source-layer": "worship_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Place_of_worship_point/Mosque - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Place_of_worship_point/Mosque - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Place_of_worship_point/Mosque - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Place_of_worship_point/Mosque - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Place_of_worship_point/Mosque - Non operational",
+          "Place_of_worship_point/Mosque - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#000000" }
+    },
+    {
+      "id": "jewish-point",
+      "type": "symbol",
+      "filter": ["==", "type", "jewish"],
+      "source": "esri",
+      "source-layer": "worship_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Place_of_worship_point/Synagogue - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Place_of_worship_point/Synagogue - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Place_of_worship_point/Synagogue - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Place_of_worship_point/Synagogue - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Place_of_worship_point/Synagogue - Non operational",
+          "Place_of_worship_point/Synagogue - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#000000" }
+    },
+    {
+      "id": "worship-unknown-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "worship_p",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": "Place_of_worship_point/Unknown",
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "rgba(162,161,158,0.78)" }
+    },
+    {
+      "id": "tent-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "tent"],
+      "source": "esri",
+      "source-layer": "shelters_a",
+      "minzoom": 16.59,
+      "layout": {},
+      "paint": {
+        "fill-color": "#B2B2B2",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "shelter-kit-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "shelter_kit"],
+      "source": "esri",
+      "source-layer": "shelters_a",
+      "minzoom": 16.59,
+      "layout": {},
+      "paint": {
+        "fill-color": "#B2B2B2",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "prefab-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "prefab"],
+      "source": "esri",
+      "source-layer": "shelters_a",
+      "minzoom": 16.59,
+      "layout": {},
+      "paint": {
+        "fill-color": "#B2B2B2",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "local-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "local"],
+      "source": "esri",
+      "source-layer": "shelters_a",
+      "minzoom": 16.59,
+      "layout": {},
+      "paint": {
+        "fill-color": "#B2B2B2",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "shelters-unknown-polygon",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "shelters_a",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 16.59,
+      "layout": {},
+      "paint": {
+        "fill-color": "#B2B2B2",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "tent-point",
+      "type": "symbol",
+      "filter": ["==", "type", "tent"],
+      "source": "esri",
+      "source-layer": "shelters_p",
+      "minzoom": 16.59,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Shelters_point/Tent - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Shelters_point/Tent - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Shelters_point/Tent - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Shelters_point/Tent - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Shelters_point/Tent - Non operational",
+          "Shelters_point/Tent - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#FFFFFF" }
+    },
+    {
+      "id": "shelter-kit-point",
+      "type": "symbol",
+      "filter": ["==", "type", "shelter_kit"],
+      "source": "esri",
+      "source-layer": "shelters_p",
+      "minzoom": 16.59,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Shelters_point/Shelter kit - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Shelters_point/Shelter kit - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Shelters_point/Shelter kit - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Shelters_point/Shelter kit - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Shelters_point/Shelter kit - Non operational",
+          "Shelters_point/Shelter kit - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#FFFFFF" }
+    },
+    {
+      "id": "prefab-point",
+      "type": "symbol",
+      "filter": ["==", "type", "prefab"],
+      "source": "esri",
+      "source-layer": "shelters_p",
+      "minzoom": 16.59,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Shelters_point/Shed or prefabricated - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Shelters_point/Shed or prefabricated - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Shelters_point/Shed or prefabricated - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Shelters_point/Shed or prefabricated - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Shelters_point/Shed or prefabricated - Non operational",
+          "Shelters_point/Shed or prefabricated - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#FFFFFF" }
+    },
+    {
+      "id": "local-point",
+      "type": "symbol",
+      "filter": ["==", "type", "local"],
+      "source": "esri",
+      "source-layer": "shelters_p",
+      "minzoom": 16.59,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Shelters_point/Local construction - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Shelters_point/Local construction - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Shelters_point/Local construction - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Shelters_point/Local construction - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Shelters_point/Local construction - Non operational",
+          "Shelters_point/Local construction - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#FFFFFF" }
+    },
+    {
+      "id": "shelters-unknown-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "shelters_p",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 16.59,
+      "layout": {
+        "icon-image": "Shelters_point/Unknown",
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "rgba(162,161,158,0.78)" }
+    },
+    {
+      "id": "latrine-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "latrine"],
+      "source": "esri",
+      "source-layer": "sanitation_a",
+      "minzoom": 16.59,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFAA00",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "shower-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "shower"],
+      "source": "esri",
+      "source-layer": "sanitation_a",
+      "minzoom": 15.85,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFAA00",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "wash-stand-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "wash_stand"],
+      "source": "esri",
+      "source-layer": "sanitation_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFAA00",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "hand-washing-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "hand_washing"],
+      "source": "esri",
+      "source-layer": "sanitation_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFAA00",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "sanitation-unknown-polygon",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "sanitation_a",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFAA00",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "latrine-point",
+      "type": "symbol",
+      "filter": ["==", "type", "latrine"],
+      "source": "esri",
+      "source-layer": "sanitation_p",
+      "minzoom": 16.59,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Sanitation_point/Latrine - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Sanitation_point/Latrine - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Sanitation_point/Latrine - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Sanitation_point/Latrine - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Sanitation_point/Latrine - Non operational",
+          "Sanitation_point/Latrine - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "#000000",
+          "#1A1A1A"
+        ]
+      }
+    },
+    {
+      "id": "shower-point",
+      "type": "symbol",
+      "filter": ["==", "type", "shower"],
+      "source": "esri",
+      "source-layer": "sanitation_p",
+      "minzoom": 15.85,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Sanitation_point/Shower - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Sanitation_point/Shower - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Sanitation_point/Shower - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Sanitation_point/Shower - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Sanitation_point/Shower - Non operational",
+          "Sanitation_point/Shower - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#1A1A1A" }
+    },
+    {
+      "id": "wash-stand-point",
+      "type": "symbol",
+      "filter": ["==", "type", "wash_stand"],
+      "source": "esri",
+      "source-layer": "sanitation_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Sanitation_point/Wash stand - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Sanitation_point/Wash stand - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Sanitation_point/Wash stand - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Sanitation_point/Wash stand - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Sanitation_point/Wash stand - Non operational",
+          "Sanitation_point/Wash stand - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#1A1A1A" }
+    },
+    {
+      "id": "hand-washing-point",
+      "type": "symbol",
+      "filter": ["==", "type", "hand_washing"],
+      "source": "esri",
+      "source-layer": "sanitation_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Sanitation_point/Hand washing point - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Sanitation_point/Hand washing point - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Sanitation_point/Hand washing point - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Sanitation_point/Hand washing point - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Sanitation_point/Hand washing point - Non operational",
+          "Sanitation_point/Hand washing point - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#1A1A1A" }
+    },
+    {
+      "id": "sanitation-unknown-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "sanitation_p",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": "Sanitation_point/Unknown",
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "rgba(162,161,158,0.78)" }
+    },
+    {
+      "id": "trash-bin-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "trash_bin"],
+      "source": "esri",
+      "source-layer": "waste_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#98E600",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "collection-point-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "collection_point"],
+      "source": "esri",
+      "source-layer": "waste_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#98E600",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "pit-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "pit"],
+      "source": "esri",
+      "source-layer": "waste_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#98E600",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "landfill-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "landfill"],
+      "source": "esri",
+      "source-layer": "waste_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#98E600",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "recycling-center-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "recycling_center"],
+      "source": "esri",
+      "source-layer": "waste_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#98E600",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "waste-management-unknown-polygon",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "waste_a",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#98E600",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "trash-bin-point",
+      "type": "symbol",
+      "filter": ["==", "type", "trash_bin"],
+      "source": "esri",
+      "source-layer": "waste_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Waste_management_point/Trash bin - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Waste_management_point/Trash bin - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Waste_management_point/Trash bin - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Waste_management_point/Trash bin - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Waste_management_point/Trash bin - Non operational",
+          "Waste_management_point/Trash bin - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#1A1A1A" }
+    },
+    {
+      "id": "collection-point-point",
+      "type": "symbol",
+      "filter": ["==", "type", "collection_point"],
+      "source": "esri",
+      "source-layer": "waste_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Waste_management_point/Waste collection point - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Waste_management_point/Waste collection point - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Waste_management_point/Waste collection point - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Waste_management_point/Waste collection point - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Waste_management_point/Waste collection point - Non operational",
+          "Waste_management_point/Waste collection point - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#1A1A1A" }
+    },
+    {
+      "id": "pit-point",
+      "type": "symbol",
+      "filter": ["==", "type", "pit"],
+      "source": "esri",
+      "source-layer": "waste_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Waste_management_point/Garbage pit - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Waste_management_point/Garbage pit - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Waste_management_point/Garbage pit - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Waste_management_point/Garbage pit - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Waste_management_point/Garbage pit - Non operational",
+          "Waste_management_point/Garbage pit - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#000000" }
+    },
+    {
+      "id": "landfill-point",
+      "type": "symbol",
+      "filter": ["==", "type", "landfill"],
+      "source": "esri",
+      "source-layer": "waste_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Waste_management_point/Landfill - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Waste_management_point/Landfill - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Waste_management_point/Landfill - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Waste_management_point/Landfill - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Waste_management_point/Landfill - Non operational",
+          "Waste_management_point/Landfill - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#1A1A1A" }
+    },
+    {
+      "id": "recycling-center-point",
+      "type": "symbol",
+      "filter": ["==", "type", "recycling_center"],
+      "source": "esri",
+      "source-layer": "waste_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Waste_management_point/Recycling center - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Waste_management_point/Recycling center - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Waste_management_point/Recycling center - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Waste_management_point/Recycling center - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Waste_management_point/Recycling center - Non operational",
+          "Waste_management_point/Recycling center - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#2C5AA0" }
+    },
+    {
+      "id": "waste-management-unknown-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "waste_p",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": "Waste_management_point/Unknown",
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "rgba(162,161,158,0.78)" }
+    },
+    {
+      "id": "well-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "well"],
+      "source": "esri",
+      "source-layer": "water_extrac_other_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#73FFDF",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "spring-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "spring"],
+      "source": "esri",
+      "source-layer": "water_extrac_other_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#73FFDF",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "rainwater-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "rainwater"],
+      "source": "esri",
+      "source-layer": "water_extrac_other_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#73FFDF",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "water-extraction-unknown-polygon",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "water_extrac_other_a",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#73FFDF",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "well-point",
+      "type": "symbol",
+      "filter": ["==", "type", "well"],
+      "source": "esri",
+      "source-layer": "water_extrac_other_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Water_source_point/Well - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Water_source_point/Well - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Water_source_point/Well - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Water_source_point/Well - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Water_source_point/Well - Non operational",
+          "Water_source_point/Well - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          ["==", ["get", "status"], "unknown"],
+          "rgba(0,0,0,0)",
+          "#2C5AA0"
+        ]
+      }
+    },
+    {
+      "id": "spring-point",
+      "type": "symbol",
+      "filter": ["==", "type", "spring"],
+      "source": "esri",
+      "source-layer": "water_extrac_other_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Water_source_point/Spring - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Water_source_point/Spring - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Water_source_point/Spring - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Water_source_point/Spring - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Water_source_point/Spring - Non operational",
+          "Water_source_point/Spring - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          ["==", ["get", "status"], "unknown"],
+          "rgba(0,0,0,0)",
+          "#2C5AA0"
+        ]
+      }
+    },
+    {
+      "id": "rainwater-point",
+      "type": "symbol",
+      "filter": ["==", "type", "rainwater"],
+      "source": "esri",
+      "source-layer": "water_extrac_other_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Water_source_point/Rainwater collection - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Water_source_point/Rainwater collection - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Water_source_point/Rainwater collection - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Water_source_point/Rainwater collection - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Water_source_point/Rainwater collection - Non operational",
+          "Water_source_point/Rainwater collection - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          ["==", ["get", "status"], "unknown"],
+          "rgba(0,0,0,0)",
+          "#2C5AA0"
+        ]
+      }
+    },
+    {
+      "id": "borehole",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "borehole",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "pump_type"], "electrical_pump"],
+          [
+            "case",
+            ["==", ["get", "status"], "active"],
+            "Borehole/Electrical pump - Active",
+            "Borehole/Electrical pump - Inactive/Unknown"
+          ],
+          ["==", ["get", "pump_type"], "foot_pump"],
+          [
+            "case",
+            ["==", ["get", "status"], "active"],
+            "Borehole/Hand/Foot pump - Active",
+            "Borehole/Hand/Foot pump - Inactive/Unknown"
+          ],
+          ["==", ["get", "pump_type"], "hand_pump"],
+          [
+            "case",
+            ["==", ["get", "status"], "active"],
+            "Borehole/Hand/Hoot pump - Active",
+            "Borehole/Hand/Hoot pump - Inactive/Unknown"
+          ],
+          [
+            "case",
+            ["==", ["get", "status"], "active"],
+            "Borehole/Type unknown - Active",
+            "Borehole/Type unknown - Inactive/Unknown"
+          ]
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#FFFFFF" }
+    },
+    {
+      "id": "water-extraction-unknown-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "water_extrac_other_p",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": "Water_source_point/Unknown",
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "rgba(162,161,158,0.78)" }
+    },
+    {
+      "id": "tap-stand-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "tap_stand"],
+      "source": "esri",
+      "source-layer": "water_distribution_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#00C5FF",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "water-truck-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "water_truck"],
+      "source": "esri",
+      "source-layer": "water_distribution_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#00C5FF",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "water-distribution-unknown-polygon",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "water_distribution_a",
+      "filter": ["==", "type", "unkown"],
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#00C5FF",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "tap-stand-point",
+      "type": "symbol",
+      "filter": ["==", "type", "tap_stand"],
+      "source": "esri",
+      "source-layer": "water_distribution_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Water_distribution_point/Tap stand - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Water_distribution_point/Tap stand - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Water_distribution_point/Tap stand - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Water_distribution_point/Tap stand - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Water_distribution_point/Tap stand - Non operational",
+          "Water_distribution_point/Tap stand - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          ["==", ["get", "status"], "unknown"],
+          "rgba(0,0,0,0)",
+          "#2C5AA0"
+        ]
+      }
+    },
+    {
+      "id": "water-truck-point",
+      "type": "symbol",
+      "filter": ["==", "type", "water_truck"],
+      "source": "esri",
+      "source-layer": "water_extrac_other_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Water_distribution_point/Water truck - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Water_distribution_point/Water truck - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Water_distribution_point/Water truck - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Water_distribution_point/Water truck - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Water_distribution_point/Water truck - Non operational",
+          "Water_distribution_point/Water truck - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          ["==", ["get", "status"], "defective"],
+          "#FF6600",
+          ["==", ["get", "status"], "under_construction"],
+          "#FFCC00",
+          ["==", ["get", "status"], "unknown"],
+          "rgba(0,0,0,0)",
+          "#2C5AA0"
+        ]
+      }
+    },
+    {
+      "id": "water-distribution-unknown-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "water_distribution_p",
+      "filter": ["==", "type", "unkown"],
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": "Water_distribution_point/Unknown",
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "rgba(162,161,158,0.78)" }
+    },
+    {
+      "id": "bladder-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "bladder"],
+      "source": "esri",
+      "source-layer": "water_storage_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#005CE6",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "tank-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "tank"],
+      "source": "esri",
+      "source-layer": "water_storage_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#005CE6",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "water-storage-unknown-polygon",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "water_storage_a",
+      "filter": ["==", "_symbol", 10],
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#005CE6",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "bladder-point",
+      "type": "symbol",
+      "filter": ["==", "type", "bladder"],
+      "source": "esri",
+      "source-layer": "water_storage_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Water_storage_point/Bladder - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Water_storage_point/Bladder - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Water_storage_point/Bladder - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Water_storage_point/Bladder - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Water_storage_point/Bladder - Non operational",
+          "Water_storage_point/Bladder - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#2C5AA0" }
+    },
+    {
+      "id": "tank-point",
+      "type": "symbol",
+      "filter": ["==", "type", "tank"],
+      "source": "esri",
+      "source-layer": "water_storage_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Water_storage_point/Tank - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Water_storage_point/Tank - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Water_storage_point/Tank - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Water_storage_point/Tank - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Water_storage_point/Tank - Non operational",
+          "Water_storage_point/Tank - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          ["==", ["get", "status"], "unknown"],
+          "rgba(44,90,160,0)",
+          "#2C5AA0"
+        ]
+      }
+    },
+    {
+      "id": "water-storage-unknown-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "water_storage_p",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": "Water_storage_point/Unknown",
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "rgba(162,161,158,0.78)" }
+    },
+    {
+      "id": "drinkable-outer",
+      "type": "line",
+      "filter": ["==", "type", "drinkable"],
+      "source": "esri",
+      "source-layer": "water_system_l",
+      "minzoom": 11.53,
+      "layout": { "line-join": "round" },
+      "paint": {
+        "line-color": "#006E83",
+        "line-width": 2.66667
+      }
+    },
+    {
+      "id": "runoff-outer",
+      "type": "line",
+      "filter": ["==", "type", "runoff"],
+      "source": "esri",
+      "source-layer": "water_system_l",
+      "minzoom": 11.53,
+      "layout": { "line-join": "round" },
+      "paint": {
+        "line-color": "#00A9E6",
+        "line-width": 2.66667
+      }
+    },
+    {
+      "id": "grey-water-outer",
+      "type": "line",
+      "filter": ["==", "type", "grey_water"],
+      "source": "esri",
+      "source-layer": "water_system_l",
+      "minzoom": 11.53,
+      "layout": { "line-join": "round" },
+      "paint": {
+        "line-color": "#828282",
+        "line-width": 2.66667
+      }
+    },
+    {
+      "id": "black-water-outer",
+      "type": "line",
+      "filter": ["==", "type", "black_water"],
+      "source": "esri",
+      "source-layer": "water_system_l",
+      "minzoom": 11.53,
+      "layout": { "line-join": "round" },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 2.66667
+      }
+    },
+    {
+      "id": "watersystem-unknown-outer",
+      "type": "line",
+      "filter": ["==", "type", "unknown"],
+      "source": "esri",
+      "source-layer": "water_system_l",
+      "minzoom": 11.53,
+      "layout": { "line-join": "round" },
+      "paint": {
+        "line-color": "#B2B2B2",
+        "line-width": 2.66667
+      }
+    },
+    {
+      "id": "drinkable-inner",
+      "type": "line",
+      "filter": ["==", "type", "drinkable"],
+      "source": "esri",
+      "source-layer": "water_system_l",
+      "minzoom": 11.53,
+      "layout": { "line-join": "round" },
+      "paint": {
+        "line-color": "#BED2FF",
+        "line-width": 1.06667
+      }
+    },
+    {
+      "id": "runoff-inner",
+      "type": "line",
+      "filter": ["==", "type", "runoff"],
+      "source": "esri",
+      "source-layer": "water_system_l",
+      "minzoom": 11.53,
+      "layout": { "line-join": "round" },
+      "paint": {
+        "line-color": "#BEE8FF",
+        "line-width": 1.6
+      }
+    },
+    {
+      "id": "grey-water-inner",
+      "type": "line",
+      "filter": ["==", "type", "grey_water"],
+      "source": "esri",
+      "source-layer": "water_system_l",
+      "minzoom": 11.53,
+      "layout": { "line-join": "round" },
+      "paint": {
+        "line-color": "#B2B2B2",
+        "line-width": 1.6
+      }
+    },
+    {
+      "id": "black-water-inner",
+      "type": "line",
+      "filter": ["==", "type", "black_water"],
+      "source": "esri",
+      "source-layer": "water_system_l",
+      "minzoom": 11.53,
+      "layout": { "line-join": "round" },
+      "paint": {
+        "line-color": "#9C9C9C",
+        "line-width": 1.6
+      }
+    },
+    {
+      "id": "watersystem-unknown-inner",
+      "type": "line",
+      "filter": ["==", "type", "unknown"],
+      "source": "esri",
+      "source-layer": "water_system_l",
+      "minzoom": 11.53,
+      "layout": { "line-join": "round" },
+      "paint": {
+        "line-color": "#E1E1E1",
+        "line-width": 1.6
+      }
+    },
+    {
+      "id": "water-treatment-plant-polygon",
+      "type": "fill",
+      "filter": ["==", "type", "water_treatment_plant"],
+      "source": "esri",
+      "source-layer": "water_treatment_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFBEE8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "water-treatment-unknown-polygon",
+      "type": "fill",
+      "source": "esri",
+      "source-layer": "water_treatment_a",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "#FFBEE8",
+        "fill-opacity": 0.4,
+        "fill-outline-color": "#6E6E6E"
+      }
+    },
+    {
+      "id": "water-treatment-plant-point",
+      "type": "symbol",
+      "filter": ["==", "type", "water_treatment_plant"],
+      "source": "esri",
+      "source-layer": "water_treatment_p",
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": [
+          "case",
+          ["==", ["get", "status"], "operational"],
+          "Water_treatment_point/Treatment plant - Operational",
+          ["==", ["get", "status"], "defective"],
+          "Water_treatment_point/Treatment plant - Defective",
+          ["==", ["get", "status"], "disused"],
+          "Water_treatment_point/Treatment plant - Disused",
+          ["==", ["get", "status"], "under_construction"],
+          "Water_treatment_point/Treatment plant - Under construction",
+          ["==", ["get", "status"], "non_operational"],
+          "Water_treatment_point/Treatment plant - Non operational",
+          "Water_treatment_point/Treatment plant - Unknown"
+        ],
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#2C5AA0" }
+    },
+    {
+      "id": "water-treatment-unknown-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "water_treatment_p",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 11.53,
+      "layout": {
+        "icon-image": "Water_treatment_point/Unknown",
+        "icon-allow-overlap": true
+      },
+      "paint": { "icon-color": "#2C5AA0" }
+    },
+    {
+      "id": "primary-road",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "transport_l",
+      "filter": ["==", "type", "primary_road"],
+      "minzoom": 11.53,
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": { "line-color": "#828282", "line-width": 4 }
+    },
+    {
+      "id": "secondary-road",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "transport_l",
+      "filter": ["==", "type", "secondary_road"],
+      "minzoom": 11.53,
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": { "line-color": "#686868", "line-width": 2.66667 }
+    },
+    {
+      "id": "tertiary-road",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "transport_l",
+      "filter": ["==", "type", "tertiary_road"],
+      "minzoom": 11.53,
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": { "line-color": "#4E4E4E", "line-width": 2 }
+    },
+    {
+      "id": "residential-road",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "transport_l",
+      "filter": ["==", "type", "residential_road"],
+      "minzoom": 11.53,
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": { "line-color": "#B2B2B2", "line-width": 1.33333 }
+    },
+    {
+      "id": "path",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "transport_l",
+      "filter": ["==", "type", "path"],
+      "minzoom": 11.53,
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": {
+        "line-color": "#267300",
+        "line-dasharray": [0.001, 1.999],
+        "line-width": 1.33333
+      }
+    },
+    {
+      "id": "track",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "transport_l",
+      "filter": ["==", "type", "track"],
+      "minzoom": 11.53,
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": {
+        "line-color": "#730000",
+        "line-dasharray": [0.001, 1.999],
+        "line-width": 1.33333
+      }
+    },
+    {
+      "id": "road-unknown",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "transport_l",
+      "filter": ["==", "type", "unknown"],
+      "minzoom": 11.53,
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": {
+        "line-color": "#B2B2B2",
+        "line-dasharray": [0.001, 1.999],
+        "line-width": 1.33333
+      }
+    },
+    {
+      "id": "river",
+      "type": "line",
+      "filter": ["==", "type", "river"],
+      "source": "esri",
+      "source-layer": "rivers_l",
+      "minzoom": 11.53,
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": {
+        "line-color": "#7AB6F5",
+        "line-width": 2.66667
+      }
+    },
+    {
+      "id": "stream",
+      "type": "line",
+      "filter": ["==", "type", "stream"],
+      "source": "esri",
+      "source-layer": "rivers_l",
+      "minzoom": 11.53,
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": {
+        "line-color": "#7AB6F5",
+        "line-width": 1.33333
+      }
+    },
+    {
+      "id": "river-unknown",
+      "type": "line",
+      "filter": ["==", "type", "unknown"],
+      "source": "esri",
+      "source-layer": "rivers_l",
+      "minzoom": 11.53,
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": {
+        "line-color": "#BFDBEA",
+        "line-width": 1.33333
+      }
+    },
+    {
+      "id": "forest",
+      "type": "fill",
+      "filter": ["==", "type", "forest"],
+      "source": "esri",
+      "source-layer": "landuse_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "rgba(112,168,0,0.15)",
+        "fill-pattern": "Landuse/Forest/0"
+      }
+    },
+    {
+      "id": "water",
+      "type": "fill",
+      "filter": ["==", "type", "water"],
+      "source": "esri",
+      "source-layer": "landuse_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "rgba(76,115,176,0.15)",
+        "fill-pattern": "Landuse/Water/0"
+      }
+    },
+    {
+      "id": "wetland",
+      "type": "fill",
+      "filter": ["==", "type", "wetland"],
+      "source": "esri",
+      "source-layer": "landuse_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "rgba(168,56,0,0.15)",
+        "fill-pattern": "Landuse/Wetland/0"
+      }
+    },
+    {
+      "id": "vacant",
+      "type": "fill",
+      "filter": ["==", "type", "vacant"],
+      "source": "esri",
+      "source-layer": "landuse_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "rgba(255,170,0,0.15)",
+        "fill-pattern": "Landuse/Vacant/0"
+      }
+    },
+    {
+      "id": "landuse-unknown",
+      "type": "fill",
+      "filter": ["==", "type", "unknown"],
+      "source": "esri",
+      "source-layer": "landuse_a",
+      "minzoom": 11.53,
+      "layout": {},
+      "paint": {
+        "fill-color": "rgba(78,78,78,0.15)",
+        "fill-pattern": "Landuse/Unknown/0"
+      }
+    },
+    {
+      "id": "admindiv0/label/Default",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "site_adm0_a/label",
+      "minzoom": 11.53,
+      "maxzoom": 13.05,
+      "layout": {
+        "text-font": ["Tahoma Bold"],
+        "text-size": 14.6667,
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#9C9C9C",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1.33333
+      }
+    },
+    {
+      "id": "admindiv1/label/Default",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "site_adm1_a/label",
+      "minzoom": 13.05,
+      "maxzoom": 15.17,
+      "layout": {
+        "text-font": ["Tahoma Bold"],
+        "text-size": 12,
+        "text-field": "{_name}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#9C9C9C",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1.33333
+      }
+    },
+    {
+      "id": "admindiv2/label/Default",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "site_adm2_a/label",
+      "minzoom": 15.17,
+      "maxzoom": 16.17,
+      "layout": {
+        "text-font": ["Tahoma Regular"],
+        "text-size": 9.33333,
+        "text-field": "{_name}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#9C9C9C",
+        "text-halo-color": "#FFFFFF",
+        "text-halo-width": 1.33333
+      }
+    }
+  ],
+  "version": 8
+}
