@@ -30,6 +30,58 @@
       "paint": {"raster-saturation": 0, "raster-opacity": 0.5}
     },
     {
+      "id": "adm3-polygon",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "site_adm3_a",
+      "minzoom": 16,
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#506489",
+        "line-width": 0.5,
+        "line-dasharray": [0, 3]
+      }
+    },
+    {
+      "id": "adm2-polygon",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "site_adm2_a",
+      "minzoom": 14,
+      "layout": {"line-cap": "round", "line-join": "round"},
+      "paint": {
+        "line-color": "#18375F",
+        "line-width": 1.33333,
+        "line-dasharray": [0, 4]
+      }
+    },
+    {
+      "id": "adm1-polygon",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "site_adm1_a",
+      "minzoom": 13,
+      "layout": {"line-cap": "round", "line-join": "round"},
+      "paint": {"line-color": "#18375F", "line-width": 1.5, "line-opacity": 0.8}
+    },
+    {
+      "id": "camp-boundary",
+      "type": "line",
+      "source": "esri",
+      "source-layer": "site_adm0_a",
+      "layout": {"line-cap": "round", "line-join": "round"},
+      "paint": {
+        "line-color": "#18375F",
+        "line-width": 6,
+        "line-opacity": 0.7,
+        "line-blur": 2
+      }
+    },
+    {
       "id": "rivers_line",
       "type": "line",
       "source": "esri",
@@ -233,9 +285,23 @@
       "source": "esri",
       "source-layer": "shelters_a",
       "minzoom": 15,
+      "maxzoom": 18,
       "paint": {
         "fill-color": "rgba(230, 230, 230, 1)",
         "fill-outline-color": "rgba(187, 187, 187, 0.7)"
+      }
+    },
+    {
+      "id": "shelters_areas_extrud",
+      "type": "fill-extrusion",
+      "source": "esri",
+      "source-layer": "shelters_a",
+      "minzoom": 18,
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "fill-extrusion-color": "rgba(230, 230, 230, 1)",
+        "fill-extrusion-height": 2,
+        "fill-extrusion-opacity": 1
       }
     },
     {
@@ -286,98 +352,29 @@
       }
     },
     {
-      "id": "tapstand-point",
-      "type": "circle",
+      "id": "latrines-points",
+      "type": "symbol",
       "source": "esri",
-      "source-layer": "water_distribution_p",
-      "minzoom": 14,
-      "filter": ["all", ["==", "type", "tap_stand"]],
-      "paint": {
-        "circle-radius": [
+      "source-layer": "sanitation_p",
+      "minzoom": 17,
+      "filter": ["all", ["==", "type", "latrine"]],
+      "layout": {
+        "icon-image": "latrines",
+        "icon-size": [
           "interpolate",
           ["linear"],
           ["zoom"],
-          14,
-          0.7,
-          15,
-          1.5,
-          16,
-          3,
           17,
-          5,
-          18,
-          7
-        ],
-        "circle-color": "rgba(0, 114, 188, 1)",
-        "circle-stroke-color": "rgba(255, 255, 255, 1)",
-        "circle-stroke-opacity": 1,
-        "circle-stroke-width": [
-          "interpolate",
-          ["linear"],
-          ["zoom"],
-          14,
           0.3,
-          15,
-          0.5,
-          16,
-          0.8,
-          17,
-          0.9,
           18,
+          0.5,
+          19,
+          0.8,
+          20,
+          0.9,
+          21,
           1
         ]
-      }
-    },
-    {
-      "id": "adm3-polygon",
-      "type": "line",
-      "source": "esri",
-      "source-layer": "site_adm3_a",
-      "minzoom": 16,
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round",
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-color": "#506489",
-        "line-width": 0.5,
-        "line-dasharray": [0, 3]
-      }
-    },
-    {
-      "id": "adm2-polygon",
-      "type": "line",
-      "source": "esri",
-      "source-layer": "site_adm2_a",
-      "minzoom": 14,
-      "layout": {"line-cap": "round", "line-join": "round"},
-      "paint": {
-        "line-color": "#18375F",
-        "line-width": 1.33333,
-        "line-dasharray": [0, 4]
-      }
-    },
-    {
-      "id": "adm1-polygon",
-      "type": "line",
-      "source": "esri",
-      "source-layer": "site_adm1_a",
-      "minzoom": 13,
-      "layout": {"line-cap": "round", "line-join": "round"},
-      "paint": {"line-color": "#18375F", "line-width": 1.5, "line-opacity": 0.8}
-    },
-    {
-      "id": "camp-boundary",
-      "type": "line",
-      "source": "esri",
-      "source-layer": "site_adm0_a",
-      "layout": {"line-cap": "round", "line-join": "round"},
-      "paint": {
-        "line-color": "#18375F",
-        "line-width": 6,
-        "line-opacity": 0.7,
-        "line-blur": 2
       }
     },
     {
@@ -386,7 +383,11 @@
       "source": "esri",
       "source-layer": "socfac_p",
       "minzoom": 13,
-      "filter": ["all", ["==", "type", "distribution_point"]],
+      "filter": [
+        "any",
+        ["==", "type", "distribution_point"],
+        ["==", "type", "nfi_distribution"]
+      ],
       "layout": {
         "icon-image": "distribution",
         "icon-size": [
@@ -419,10 +420,46 @@
       "filter": [
         "any",
         ["==", "type", "group_center"],
-        ["==", "type", "community_center"]
+        ["==", "type", "community_center"],
+        ["==", "type", "protection_center"],
+        ["==", "type", "psychological"]
       ],
       "layout": {
         "icon-image": "community",
+        "icon-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          13,
+          0.5,
+          14,
+          0.5,
+          15,
+          0.5,
+          16,
+          0.6,
+          17,
+          0.7,
+          18,
+          0.8
+        ],
+        "text-allow-overlap": false,
+        "icon-allow-overlap": true
+      }
+    },
+    {
+      "id": "playground-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "minzoom": 13,
+      "filter": [
+        "any",
+        ["==", "type", "playground"],
+        ["==", "type", "sport_center"]
+      ],
+      "layout": {
+        "icon-image": "sport",
         "icon-size": [
           "interpolate",
           ["linear"],
@@ -453,6 +490,169 @@
       "filter": ["all", ["==", "type", "marketplace"]],
       "layout": {
         "icon-image": "market",
+        "icon-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          13,
+          0.5,
+          14,
+          0.5,
+          15,
+          0.5,
+          16,
+          0.6,
+          17,
+          0.7,
+          18,
+          0.8
+        ],
+        "text-allow-overlap": false,
+        "icon-allow-overlap": true
+      }
+    },
+    {
+      "id": "water-truck-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "water_distribution_p",
+      "minzoom": 15,
+      "filter": ["all", ["==", "type", "water_truck"]],
+      "layout": {
+        "icon-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          13,
+          0.5,
+          14,
+          0.5,
+          15,
+          0.5,
+          16,
+          0.6,
+          17,
+          0.7,
+          18,
+          0.8
+        ],
+        "text-allow-overlap": false,
+        "icon-allow-overlap": true,
+        "icon-image": "truck"
+      }
+    },
+    {
+      "id": "bladder-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "water_storage_p",
+      "minzoom": 15,
+      "filter": ["all", ["==", "type", "bladder"]],
+      "layout": {
+        "icon-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          13,
+          0.3,
+          14,
+          0.3,
+          15,
+          0.3,
+          16,
+          0.4,
+          17,
+          0.6,
+          18,
+          0.8
+        ],
+        "text-allow-overlap": false,
+        "icon-allow-overlap": true,
+        "icon-image": "bladder"
+      }
+    },
+    {
+      "id": "water-tank-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "water_storage_p",
+      "minzoom": 15,
+      "filter": ["all", ["==", "type", "tank"]],
+      "layout": {
+        "icon-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          13,
+          0.3,
+          14,
+          0.3,
+          15,
+          0.3,
+          16,
+          0.4,
+          17,
+          0.6,
+          18,
+          0.8
+        ],
+        "text-allow-overlap": false,
+        "icon-allow-overlap": true,
+        "icon-image": "tank"
+      }
+    },
+    {
+      "id": "tapstand-point",
+      "type": "circle",
+      "source": "esri",
+      "source-layer": "water_distribution_p",
+      "minzoom": 14,
+      "filter": ["all", ["==", "type", "tap_stand"]],
+      "paint": {
+        "circle-radius": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          14,
+          0.9,
+          15,
+          1.7,
+          16,
+          3.5,
+          17,
+          6,
+          18,
+          9
+        ],
+        "circle-color": "rgba(0, 114, 188, 1)",
+        "circle-stroke-color": "rgba(255, 255, 255, 1)",
+        "circle-stroke-opacity": 1,
+        "circle-stroke-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          14,
+          0.3,
+          15,
+          0.5,
+          16,
+          0.8,
+          17,
+          0.9,
+          18,
+          1
+        ]
+      }
+    },
+    {
+      "id": "water-treatment-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "water_treatment_p",
+      "minzoom": 14,
+      "filter": ["all", ["==", "type", "water_treatment_plant"]],
+      "layout": {
+        "icon-image": "water_treatment",
         "icon-size": [
           "interpolate",
           ["linear"],
@@ -535,6 +735,30 @@
       }
     },
     {
+      "id": "church-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "worship_p",
+      "minzoom": 16,
+      "filter": ["all", ["==", "type", "christian"]],
+      "layout": {
+        "icon-image": "church",
+        "icon-allow-overlap": false,
+        "icon-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          16,
+          0.4,
+          17,
+          0.5,
+          18,
+          0.6
+        ],
+        "text-allow-overlap": false
+      }
+    },
+    {
       "id": "mosque-point",
       "type": "symbol",
       "source": "esri",
@@ -554,7 +778,158 @@
           0.5,
           18,
           0.6
-        ]
+        ],
+        "text-allow-overlap": false
+      }
+    },
+    {
+      "id": "army-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 15,
+      "filter": ["any", ["==", "type", "army"]],
+      "layout": {
+        "icon-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          13,
+          0.5,
+          14,
+          0.5,
+          15,
+          0.5,
+          16,
+          0.6,
+          17,
+          0.7,
+          18,
+          0.8
+        ],
+        "text-allow-overlap": false,
+        "icon-allow-overlap": true,
+        "icon-image": "army"
+      }
+    },
+    {
+      "id": "entry-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 15,
+      "filter": ["any", ["==", "type", "site_entry"]],
+      "layout": {
+        "icon-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          13,
+          0.5,
+          14,
+          0.5,
+          15,
+          0.5,
+          16,
+          0.6,
+          17,
+          0.7,
+          18,
+          0.8
+        ],
+        "text-allow-overlap": false,
+        "icon-allow-overlap": true,
+        "icon-image": "entry"
+      }
+    },
+    {
+      "id": "helipad-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 15,
+      "filter": ["any", ["==", "type", "helipad"]],
+      "layout": {
+        "icon-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          13,
+          0.5,
+          14,
+          0.5,
+          15,
+          0.5,
+          16,
+          0.6,
+          17,
+          0.7,
+          18,
+          0.8
+        ],
+        "text-allow-overlap": false,
+        "icon-allow-overlap": true,
+        "icon-image": "helipad"
+      }
+    },
+    {
+      "id": "outreach-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 15,
+      "filter": ["any", ["==", "type", "outreach"]],
+      "layout": {
+        "icon-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          13,
+          0.3,
+          14,
+          0.3,
+          15,
+          0.4,
+          16,
+          0.4,
+          17,
+          0.5,
+          18,
+          0.5
+        ],
+        "text-allow-overlap": false,
+        "icon-allow-overlap": true,
+        "icon-image": "outreach"
+      }
+    },
+    {
+      "id": "fire-point",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 15,
+      "filter": ["any", ["==", "type", "fire_station"]],
+      "layout": {
+        "icon-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          13,
+          0.5,
+          14,
+          0.5,
+          15,
+          0.5,
+          16,
+          0.6,
+          17,
+          0.7,
+          18,
+          0.8
+        ],
+        "text-allow-overlap": false,
+        "icon-allow-overlap": true,
+        "icon-image": "fire"
       }
     },
     {
@@ -563,7 +938,12 @@
       "source": "esri",
       "source-layer": "adminsec_p",
       "minzoom": 15,
-      "filter": ["any", ["==", "type", "police"]],
+      "filter": [
+        "any",
+        ["==", "type", "police"],
+        ["==", "type", "security"],
+        ["==", "type", "prison"]
+      ],
       "layout": {
         "icon-size": [
           "interpolate",
@@ -838,12 +1218,127 @@
       }
     },
     {
+      "id": "outreach-label",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 15,
+      "filter": ["any", ["==", "type", "outreach"]],
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["Arial Regular"],
+        "text-offset": [0, -1.2],
+        "visibility": "visible",
+        "text-allow-overlap": false,
+        "text-size": {"stops": [[13, 8], [14, 9], [15, 11], [16, 13]]},
+        "text-max-width": 7
+      },
+      "paint": {
+        "text-color": "rgba(40, 40, 40, 1)",
+        "text-halo-color": "rgba(228, 228, 228, 1)",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "helipad-label",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 15,
+      "filter": ["any", ["==", "type", "helipad"]],
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["Arial Regular"],
+        "text-offset": [0, -1.2],
+        "visibility": "visible",
+        "text-allow-overlap": false,
+        "text-size": {"stops": [[13, 8], [14, 9], [15, 11], [16, 13]]},
+        "text-max-width": 7
+      },
+      "paint": {
+        "text-color": "rgba(40, 40, 40, 1)",
+        "text-halo-color": "rgba(228, 228, 228, 1)",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "fire-label",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 15,
+      "filter": ["any", ["==", "type", "fire_station"]],
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["Arial Regular"],
+        "text-offset": [0, -1.2],
+        "visibility": "visible",
+        "text-allow-overlap": false,
+        "text-size": {"stops": [[13, 8], [14, 9], [15, 11], [16, 13]]},
+        "text-max-width": 7
+      },
+      "paint": {
+        "text-color": "rgba(40, 40, 40, 1)",
+        "text-halo-color": "rgba(228, 228, 228, 1)",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "entry-label",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 15,
+      "filter": ["any", ["==", "type", "site_entry"]],
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["Arial Regular"],
+        "text-offset": [0, -1.2],
+        "visibility": "visible",
+        "text-allow-overlap": false,
+        "text-size": {"stops": [[13, 8], [14, 9], [15, 11], [16, 13]]},
+        "text-max-width": 7
+      },
+      "paint": {
+        "text-color": "rgba(40, 40, 40, 1)",
+        "text-halo-color": "rgba(228, 228, 228, 1)",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "army-label",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "adminsec_p",
+      "minzoom": 15,
+      "filter": ["any", ["==", "type", "army"]],
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["Arial Regular"],
+        "text-offset": [0, -1.2],
+        "visibility": "visible",
+        "text-allow-overlap": false,
+        "text-size": {"stops": [[13, 8], [14, 9], [15, 11], [16, 13]]},
+        "text-max-width": 7
+      },
+      "paint": {
+        "text-color": "rgba(40, 40, 40, 1)",
+        "text-halo-color": "rgba(228, 228, 228, 1)",
+        "text-halo-width": 1
+      }
+    },
+    {
       "id": "police-label",
       "type": "symbol",
       "source": "esri",
       "source-layer": "adminsec_p",
       "minzoom": 15,
-      "filter": ["any", ["==", "type", "police"]],
+      "filter": [
+        "any",
+        ["==", "type", "police"],
+        ["==", "type", "security"],
+        ["==", "type", "prison"]
+      ],
       "layout": {
         "text-field": "{name}",
         "text-font": ["Arial Regular"],
@@ -935,7 +1430,11 @@
       "source": "esri",
       "source-layer": "socfac_p",
       "minzoom": 13,
-      "filter": ["all", ["==", "type", "distribution_point"]],
+      "filter": [
+        "any",
+        ["==", "type", "distribution_point"],
+        ["==", "type", "nfi_distribution"]
+      ],
       "layout": {
         "text-field": "{name}",
         "text-font": ["Arial Regular"],
@@ -960,7 +1459,35 @@
       "filter": [
         "any",
         ["==", "type", "group_center"],
-        ["==", "type", "community_center"]
+        ["==", "type", "community_center"],
+        ["==", "type", "protection_center"],
+        ["==", "type", "psychological"]
+      ],
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["Arial Regular"],
+        "text-offset": [0, -1.2],
+        "visibility": "visible",
+        "text-allow-overlap": false,
+        "text-size": {"stops": [[13, 8], [14, 9], [15, 11], [16, 13]]},
+        "text-max-width": 7
+      },
+      "paint": {
+        "text-color": "rgba(94, 83, 10, 1)",
+        "text-halo-color": "rgba(228, 228, 228, 1)",
+        "text-halo-width": 1
+      }
+    },
+    {
+      "id": "playground-label",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "socfac_p",
+      "minzoom": 13,
+      "filter": [
+        "any",
+        ["==", "type", "playground"],
+        ["==", "type", "sport_center"]
       ],
       "layout": {
         "text-field": "{name}",
